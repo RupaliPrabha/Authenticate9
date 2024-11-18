@@ -1,0 +1,26 @@
+.movies-page {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(135deg, #fffaf0, #e6f7ff);
+}
+
+@media (max-width: 1024px) {
+  .movies-page {
+    width: calc(100% - 47px);
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .movies-page {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movies-page {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,108 @@
+.login-card__wrapper {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 100%;
+  width: 40%;
+}
+.login-card__form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.form__email-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.form__submit-btn {
+  background: linear-gradient(135deg, #6ec1e4, #8dd3f5);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.form__submit-btn:hover {
+  background: linear-gradient(135deg, #8dd3f5, #6ec1e4);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.form__submit-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.email__label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+.email__input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.email__input:focus {
+  border-color: #6ec1e4;
+  box-shadow: 0 0 8px rgba(110, 193, 228, 0.5);
+}
+
+@media (max-width: 1024px) {
+  .login-card__wrapper {
+    width: 60%;
+    height: 20vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-card__wrapper {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .form__submit-btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .email__input {
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card__wrapper {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .form__submit-btn {
+    font-size: 12px;
+  }
+
+  .email__input {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}

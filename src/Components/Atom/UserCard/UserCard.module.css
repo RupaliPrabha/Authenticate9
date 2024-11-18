@@ -1,0 +1,71 @@
+.user-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(110, 193, 228, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  justify-content: space-around;
+}
+
+.user-card svg {
+  font-size: 24px;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.user-card__heading {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  max-width: 85px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.user-card:hover {
+  background: rgba(110, 193, 228, 0.2);
+  transform: translateY(-3px);
+}
+
+.user-card__user-wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.user-card__logOut-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgba(110, 193, 228, 1) 0%,
+    rgba(173, 232, 244, 1) 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.user-card__logOut-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-card__logOut-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-card__logOut-btn svg {
+  font-size: 22px;
+}
